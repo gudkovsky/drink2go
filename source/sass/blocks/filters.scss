@@ -1,0 +1,119 @@
+@media (min-width: $mobile-width) {
+  .filters {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .filters__title {
+    @include filter-heading;
+    margin-bottom: 20px;
+  }
+
+  .filters__range {
+    margin-bottom: 24px;
+    width: 100%;
+  }
+
+  .filters__price-input {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 118px;
+    height: 40px;
+    padding: 8px, 10px, 8px, 10px;
+    color: $base-black;
+    outline: none;
+    border: 2px solid $primary-lighter;
+    border-radius: 4px;
+  }
+
+  .filters__price-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 18px;
+  }
+
+  .filters__price-inputs span {
+    display: inline-block;
+    width: 8px;
+    height: 2px;
+    background-color: $base-gray;
+  }
+
+  .filters__price-input {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: $base-black;
+  }
+
+  .filters__price-input::placeholder {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: $base-gray;
+  }
+
+  .filters__milk {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 34px;
+    border: none;
+  }
+
+  .filters label {
+  font-size: 16px;
+  line-height: 24px;
+  color: $base-black;
+  }
+
+  .filters label.disabled {
+    color: $base-gray;
+  }
+
+  .filters__origin {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 30px;
+    border: none;
+  }
+
+  .filters__button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .filters__button-wrapper .button {
+    height: 40px;
+  }
+
+  .filters__reset {
+    background-color: $base-white;
+    color: $base-primary;
+  }
+
+  .filters__sort {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .filters__sort .filters__title {
+    margin: 0;
+  }
+}

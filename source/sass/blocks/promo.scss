@@ -1,0 +1,37 @@
+@media (min-width: $mobile-width) {
+  .promo {
+    background-color: $flat-white;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    overflow: hidden;
+  }
+
+  .promo__swiper-button {
+    position: absolute;
+    top: 0;
+    display: block;
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+    width: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+  }
+
+  .promo__swiper-button--left {
+    left: 0;
+  }
+  .promo__swiper-button--right {
+    right: 0;
+  }
+
+  .promo__swiper-button--right svg {
+    transform: rotate(180deg);
+  }
+
+  .promo__pagination {
+    display: none;
+  }
+}

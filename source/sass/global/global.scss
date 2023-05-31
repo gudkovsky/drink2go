@@ -45,3 +45,7 @@ img {
     @include desktop-wrapper
   }
 }
+
+.button {
+  @include button;
+}

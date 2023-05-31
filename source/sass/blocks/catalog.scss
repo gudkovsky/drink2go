@@ -1,0 +1,24 @@
+@media (min-width: $mobile-width) {
+  .catalog {
+    background-color: $lightest-gray;
+  }
+
+  .catalog__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 44px;
+  }
+
+  .catalog__badge {
+    @include badge;
+  }
+
+  .catalog__title {
+    @include h2--mobile;
+    margin-top: 4px;
+    margin-bottom: 20px;
+  }
+}

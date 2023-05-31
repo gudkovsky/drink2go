@@ -1,0 +1,34 @@
+@media (min-width: $mobile-width) {
+  .features {
+    background-color: $base-white;
+  }
+
+  .features__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  .features__badge {
+    @include badge;
+  }
+
+  .features__title {
+    @include h2--mobile;
+    margin-bottom: 36px;
+  }
+
+  .features__list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 32px;
+    column-gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+}
