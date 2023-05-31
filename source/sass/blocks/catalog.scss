@@ -21,4 +21,14 @@
     margin-top: 4px;
     margin-bottom: 20px;
   }
+
+  .catalog__product-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
 }
