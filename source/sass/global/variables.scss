@@ -1,1 +1,190 @@
-/* здесь используйте глобальные переменные */
+// FONT
+$font-primary:    'Monserrat', Arial , sans-serif;
+
+// COLORS
+
+$base-white: #FFFFFF;
+$base-gray: #BDBDBD;
+$base-black: #333333;
+$base-primary: #7859CF;
+$base-secondary: #F0EBFF;
+
+// ALT COLORS
+
+$primary-opacity: rgba(120, 89, 207, 0.25);
+$primary-lighter: #9070EC;
+$primary-darker: #593CAC;
+$light-gray: #E2E2E2;
+
+// BG COLORS
+
+$lightest-gray: #F8F8F8;
+$flat-white: #F3EBE1;
+$lavander-latte: #EAE6FC;
+$espresso: #E5E6E8;
+
+// ==== MIXINS ==== //
+
+// TEXT
+
+// Slide titles
+
+@mixin slide__title--mobile {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: $base-black;
+}
+
+@mixin slide__title--tablet {
+  font-size: 56px;
+  line-height: 80px;
+}
+
+@mixin slide__title--desktop {
+  font-size: 56px;
+  line-height: 80px;
+}
+
+// slide prices
+
+@mixin old-price {
+  font-size: 16px;
+  line-height: 32px;
+  text-decoration-line: line-through;
+  color: $base-primary;
+}
+
+@mixin new-price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: $base-black;
+}
+
+// Headings
+// h2
+
+@mixin h2--mobile {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: $base-black;
+}
+
+@mixin h2--tablet {
+  font-size: 42px;
+  line-height: 64px;
+}
+
+@mixin h2--desktop {
+  font-size: 42px;
+  line-height: 64px;
+}
+
+// h3
+
+@mixin h3--mobile {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: $base-black;
+}
+
+@mixin h3--tablet {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+@mixin h3--desktop {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+// h4
+
+@mixin h4--common {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: $base-primary;
+}
+
+// Badge
+
+@mixin badge {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $base-primary;
+}
+
+// Filters
+
+@mixin filter-heading {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: $base-black;
+}
+
+
+// Descriptions
+
+@mixin slide__text--small {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@mixin slide__text--medium {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+@mixin slide__text--large {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+// TOOLS
+
+
+@mixin outline($color) {
+  outline: 3px solid $color;
+  outline-offset: -3px;
+
+}
+
+// RESPONSIVE TOOLS
+
+// Viewports
+
+$tablet-width: 767px;
+$desktop-width: 1439px;
+$mobile-width: 320px;
+
+// WRAPPERS
+
+@mixin desktop-wrapper {
+  min-width: 1440px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@mixin tablet-wrapper {
+  min-width: 768px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@mixin mobile-wrapper {
+  min-width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
