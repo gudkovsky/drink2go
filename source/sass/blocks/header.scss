@@ -1,5 +1,27 @@
-.header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+.header__wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav {
+  order: 3;
+  width: 100vw;
+  padding: 0;
+}
+
+@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  .header__wrapper.no-js {
+    padding: 0px;
+  }
+
+  .header__wrapper.no-js .header__logo-wrapper {
+    padding-left: 20px;
+  }
+
+  .header__wrapper.no-js .header__user-box {
+    padding-right: 20px;
+  }
 }

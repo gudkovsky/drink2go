@@ -10,7 +10,6 @@ html {
 
 body {
   margin: 0;
-  background-color: lightcoral;
 }
 
 img {
@@ -27,4 +26,22 @@ img {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media (min-width: $mobile-width) {
+  .wrapper {
+    @include mobile-wrapper
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper {
+    @include tablet-wrapper
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    @include desktop-wrapper
+  }
 }

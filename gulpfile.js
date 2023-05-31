@@ -56,37 +56,37 @@ export function processScripts () {
 }
 
 export function optimizeImages () {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src('source/assets/img/**/*.{png,jpg}')
     .pipe(gulpIf(!isDevelopment, squoosh()))
-    .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('build/assets/img'))
 }
 
 export function createWebp () {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src('source/assets/img/**/*.{png,jpg}')
     .pipe(squoosh({
       webp: {}
     }))
-    .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('build/assets/img'))
 }
 
 export function optimizeVector () {
-  return gulp.src(['source/img/**/*.svg', '!source/img/icons/**/*.svg'])
+  return gulp.src(['source/assets/img/**/*.svg', '!source/img/icons/**/*.svg'])
     .pipe(svgo())
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('build/assets/img'));
 }
 
 export function createStack () {
-  return gulp.src('source/img/icons/**/*.svg')
+  return gulp.src('source/assets/img/icons/**/*.svg')
     .pipe(svgo())
     .pipe(stacksvg())
-    .pipe(gulp.dest('build/img/icons'));
+    .pipe(gulp.dest('build/assets/img/icons'));
 }
 
 export function copyAssets () {
   return gulp.src([
-    'source/fonts/**/*.{woff2,woff}',
-    'source/*.ico',
-    'source/*.webmanifest',
+    'source/assets/fonts/**/*.{woff2,woff}',
+    'source/assets/*.ico',
+    'source/assets/*.webmanifest',
   ], {
     base: 'source'
   })

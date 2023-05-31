@@ -1,0 +1,30 @@
+
+
+@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  .nav__list {
+    list-style-type: none;
+  }
+  .nav__link {
+    display: block;
+    color: $base-black;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 20px;
+  }
+  .nav__item {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid $primary-opacity;
+  }
+  .nav__item:first-child {
+    border-top: 1px solid $primary-opacity;
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  }

@@ -1,0 +1,11 @@
+.nav__list {
+  list-style-type: none;
+}
+
+@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  .logo {
+    .logo__text {
+      display: none;
+    }
+  }
+  }

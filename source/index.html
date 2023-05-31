@@ -8,13 +8,13 @@
   </head>
   <body class="page__body body">
     <header class="header">
-      <div class="wrapper header__wrapper">
+      <div class="wrapper header__wrapper no-js">
         <div class="header__logo-wrapper logo">
-          <img src="./assets/img/icons/logos/mobile-logo.png" alt="drink2go logo" class="logo__image">
+          <img class="logo__image" src="./assets/img/icons/logos/mobile-logo.png" alt="drink2go logo">
           <p class="logo__text">Интернет-магазин кофейных напитков</p>
           <!-- удалить из скрин ридеров - узнать как -->
         </div>
-        <nav class="header__nav nav">
+        <nav class="header__nav nav no-js active">
           <ul class="nav__list">
             <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
@@ -39,6 +39,14 @@
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M5.66091 3.87546L5.89351 6.66667H10.1065L10.3391 3.87546C10.4531 2.50699 9.37321 1.33333 8 1.33333C6.62679 1.33333 5.54687 2.50699 5.66091 3.87546ZM11.4444 6.66667L11.6678 3.98618C11.8466 1.84036 10.1533 0 8 0C5.84674 0 4.15336 1.84036 4.33218 3.98618L4.55556 6.66667H1.34687H0L0.190476 8L1.00626 13.7105C1.19393 15.0242 2.31905 16 3.64612 16H12.3539C13.6809 16 14.8061 15.0242 14.9937 13.7105L15.8095 8L16 6.66667H14.6531H11.4444ZM11.3333 8H11.2801L11.0579 10.6667H14.0817L14.4627 8H11.3333ZM9.94213 8H6.05787L6.28009 10.6667H9.71991L9.94213 8ZM4.71991 8H4.66667H1.53735L1.9183 10.6667H4.94213L4.71991 8ZM6.61342 14.6667L6.3912 12H9.6088L9.38658 14.6667H6.61342ZM10.9468 12L10.7245 14.6667H12.3539C13.0174 14.6667 13.58 14.1788 13.6738 13.5219L13.8912 12H10.9468ZM5.05324 12L5.27547 14.6667H3.64612C2.98259 14.6667 2.42003 14.1788 2.32619 13.5219L2.10877 12H5.05324Z" fill="#333333"/>
                   </svg>
               </a>
+            </li>
+            <li class="user-box__item">
+              <button type="button" class="user-box__link user-box__menu active" onclick="this.classList.toggle('active')">
+                <span class="visually-hidden">Кнопка открытия меню на мобильном устройстве</span>
+                <span class="user-box__burger-line"></span>
+                <span class="user-box__burger-line"></span>
+                <span class="user-box__burger-line"></span>
+              </button>
             </li>
           </ul>
         </div>
