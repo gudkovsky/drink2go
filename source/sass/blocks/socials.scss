@@ -1,0 +1,26 @@
+@media (min-width: $mobile-width) {
+  .socials__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid red;
+  }
+
+  .socials__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+  }
+
+  .socials__link {
+    padding: 10px;
+  }
+}

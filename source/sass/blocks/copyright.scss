@@ -1,0 +1,8 @@
+@media (min-width: $mobile-width) {
+  .copyright {
+    display: flex;
+    padding: 20px 0 30px;
+    justify-content: center;
+    align-items: center;
+  }
+}

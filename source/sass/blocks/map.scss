@@ -1,0 +1,11 @@
+@media (min-width: $mobile-width) {
+  .map {
+    width: 100%;
+    object-fit: cover;
+
+  }
+
+  .map img {
+    margin: 0 auto;
+  }
+}
