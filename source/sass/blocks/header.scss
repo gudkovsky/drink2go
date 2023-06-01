@@ -24,4 +24,8 @@
   .header__wrapper.no-js .header__user-box {
     padding-right: 20px;
   }
+
+  .header__wrapper.no-js .user-box__menu {
+    display: none;
+  }
 }

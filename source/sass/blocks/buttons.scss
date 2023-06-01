@@ -1,0 +1,25 @@
+.button {
+  display: inline-block;
+  background-color: $base-primary;
+  color: $base-white;
+  border: none;
+  border-radius: 4px;
+  font-family: Montserrat, Arial, sans-serif;
+  box-sizing: border-box;
+  transition: $transition-time;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary-lighter;
+  }
+  &:focus {
+    outline: none;
+    background-color: $primary-lighter;
+  }
+  &:active {
+    background-color: $primary-darker;
+  }
+  &:disabled {
+    background-color: $base-gray;
+  }
+}

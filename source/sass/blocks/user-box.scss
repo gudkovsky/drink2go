@@ -33,6 +33,10 @@
     background-color: transparent;
     cursor: pointer;
     border: none;
+    transition: $transition-time;
+    &:active {
+      background-color: $base-secondary;
+    }
   }
 
   .user-box__burger-line {

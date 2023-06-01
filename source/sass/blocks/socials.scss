@@ -14,6 +14,29 @@
   }
 
   .socials__link {
-    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: $transition-time;
+    &:hover {
+      background-color: $base-secondary;
+    }
+    &:focus {
+      background-color: $base-secondary;
+      outline: none;
+    }
+    &:active {
+      background-color: $primary-opacity;
+    }
+    &:hover svg path,
+    &:focus svg path
+    {
+      transition: $transition-time;
+      fill: $base-primary;
+    }
   }
 }

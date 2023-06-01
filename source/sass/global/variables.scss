@@ -23,6 +23,10 @@ $flat-white: #F3EBE1;
 $lavander-latte: #EAE6FC;
 $espresso: #E5E6E8;
 
+// TRANSITION
+
+$transition-time: 0.5s;
+
 // ==== MIXINS ==== //
 
 // TEXT
@@ -189,15 +193,4 @@ $mobile-width: 320px;
   padding-right: 20px;
 }
 
-// BUTTONS
 
-@mixin button {
-  display: inline-block;
-  background-color: $base-primary;
-  color: $base-white;
-  border: none;
-  border-radius: 4px;
-  font-family: Montserrat, Arial, sans-serif;
-  box-sizing: border-box;
-  cursor: pointer;
-}

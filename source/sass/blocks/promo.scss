@@ -15,16 +15,32 @@
     margin: 0;
     padding: 0px;
     width: 20px;
-    background-color: transparent;
+    background: transparent;
     cursor: pointer;
     border: none;
+    transition: $transition-time;
+    &:disabled svg path {
+      fill: $base-gray
+    }
   }
 
   .promo__swiper-button--left {
     left: 0;
+    &:hover {
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.242) 0%, rgba(255, 255, 255, 0) 100%);
+    }
+    &:active {
+      background: linear-gradient(to right, rgba(121, 89, 207, 0.2) 0%, rgba(120, 89, 207, 0) 100%);
+    }
   }
   .promo__swiper-button--right {
     right: 0;
+    &:hover {
+      background: linear-gradient(to left, rgba(255, 255, 255, 0.242) 0%, rgba(255, 255, 255, 0) 100%);
+    }
+    &:active {
+      background: linear-gradient(to left, rgba(121, 89, 207, 0.2) 0%, rgba(120, 89, 207, 0) 100%);
+    }
   }
 
   .promo__swiper-button--right svg {

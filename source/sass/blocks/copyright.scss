@@ -4,5 +4,16 @@
     padding: 20px 0 30px;
     justify-content: center;
     align-items: center;
+    transition: $transition-time;
+
+    &:hover svg path,
+    &:focus svg path
+    {
+      transition: $transition-time;
+      fill: $base-primary;
+    }
+    &:active svg path {
+      fill: $primary-darker;
+    }
   }
 }

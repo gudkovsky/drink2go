@@ -23,6 +23,18 @@
     outline: none;
     border: 2px solid $primary-lighter;
     border-radius: 4px;
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    transition: $transition-time;
+    &:focus {
+      border-color: $primary-darker;
+    }
+    &:disabled {
+      border-color: $base-gray;
+    }
   }
 
   .filters__price-inputs {
@@ -37,16 +49,6 @@
     width: 8px;
     height: 2px;
     background-color: $base-gray;
-  }
-
-  .filters__price-input {
-    font-family: $font-primary;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    color: $base-black;
   }
 
   .filters__price-input::placeholder {
@@ -104,9 +106,13 @@
     max-width: 280px;
   }
 
-  .filters__reset {
+  .filters__reset.button {
     background-color: $base-white;
     color: $base-primary;
+    &:hover,
+    &:focus {
+      color: $base-white;
+    }
   }
 
   .filters__select {
@@ -215,6 +221,29 @@
     border: 2px solid $base-primary;
     background-color: $base-white;
     cursor: pointer;
+    &::after {
+      content: '';
+      position: absolute;
+      top: calc(50% - 8px);
+      left: calc(50% - 8px);
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      transition: $transition-time;
+      background-color: transparent;
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+    }
+    &:hover::after,
+    &:focus::after {
+      background-color: $primary-opacity;
+    }
+    &:active::after {
+      background-color: $base-primary;
+    }
   }
 
   .filtes__range-toggle--min {
@@ -227,19 +256,14 @@
       top: calc(50% - 12px);
   }
 
-  // .filtes__range-toggle:hover {
-  //     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  // }
-
-  // .filtes__range-toggle:focus {
-  //     outline: 3px solid #83B3D3;
-  // }
-
-  // .filtes__range-toggle:active {
-  // outline-width: 2px;
-  // box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
-  // }
-
-
-
+  .filters__range.disabled {
+    .filtes__range-bar {
+      background-color: $light-gray;
+      pointer-events: none;
+    }
+    .filtes__range-toggle {
+      border-color: $light-gray;
+      pointer-events: none;
+    }
+  }
 }

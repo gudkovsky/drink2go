@@ -41,6 +41,7 @@
               </a>
             </li>
             <li class="user-box__item">
+              <!-- если в модуле header есть no-js - у user-box__menu выставлен display: none -->
               <button type="button" class="user-box__link user-box__menu active" onclick="this.classList.toggle('active')">
                 <span class="visually-hidden">Кнопка открытия меню на мобильном устройстве</span>
                 <span class="user-box__burger-line"></span>
@@ -135,6 +136,7 @@
                   <h4 class="filters__title">Цена</h4>
 
                   <div class="filters__range">
+                    <!-- add class "disabled" to disable pointer events and change style -->
                     <div style="left: 0; width: 263px" class="filtes__range-bar">
                       <button class="filtes__range-toggle filtes__range-toggle--min" type="button">
                           <span class="visually-hidden">ползунок min</span>
@@ -211,7 +213,7 @@
               <div class="filters__select select">
                 <header class="select__header">
                   <h3 class="filters__title select__title">Сортировка:</h3>
-                  <div class="cities__item select__pick">по умолчанию</div>
+                  <div class="cities__item select__pick active chosen" tabindex="0">по умолчанию</div>
                 </header>
 
                 <ul class="cities__list select__list dropdown-active">
@@ -309,11 +311,11 @@
                 </div>
               </div>
               <div class="catalog__pagination pagination">
-                <button class="pagination__button">Назад</button>
+                <button class="pagination__button pagination__button--prev"><span class="visually-hidden">Кнопка "предыдущая страница"</span></button>
                 <a class="pagination__page" href="">1</a>
-                <a class="pagination__page" href="">2</a>
+                <a class="pagination__page pagination__page--current" href="">2</a>
                 <a class="pagination__page" href="">3</a>
-                <button class="pagination__button">Вперед</button>
+                <button class="pagination__button pagination__button--next"><span class="visually-hidden">Кнопка "следующая страница"</span></button>
               </div>
             </div>
           </div>
@@ -385,7 +387,7 @@
         <section class="footer__contacts  footer__wrapper">
           <div class="wrapper">
             <h4 class="footer__title">Контакты</h4>
-            <a href="" class="footer__contacts footer__contacts--address">
+            <a href="https://yandex.ru/maps/-/CCUkNRRZ0B" class="footer__contacts footer__contacts--address">
               <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8 6.5C11.8 8.83027 10.4332 10.9174 8.8884 12.5109C8.13169 13.2915 7.37106 13.9131 6.79878 14.3393C6.6918 14.419 6.59177 14.4916 6.5 14.5569C6.40823 14.4916 6.3082 14.419 6.20122 14.3393C5.62894 13.9131 4.86831 13.2915 4.1116 12.5109C2.56678 10.9174 1.2 8.83027 1.2 6.5C1.2 3.57289 3.57289 1.2 6.5 1.2C9.42711 1.2 11.8 3.57289 11.8 6.5ZM13 6.5C13 12.0899 6.5 16 6.5 16C6.5 16 0 12.0899 0 6.5C0 2.91015 2.91015 0 6.5 0C10.0899 0 13 2.91015 13 6.5ZM8.8 6.5C8.8 7.77026 7.77026 8.8 6.5 8.8C5.22974 8.8 4.2 7.77026 4.2 6.5C4.2 5.22974 5.22974 4.2 6.5 4.2C7.77026 4.2 8.8 5.22974 8.8 6.5ZM10 6.5C10 8.433 8.433 10 6.5 10C4.567 10 3 8.433 3 6.5C3 4.567 4.567 3 6.5 3C8.433 3 10 4.567 10 6.5Z" fill="#7859CF"/>
               </svg>
