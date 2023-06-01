@@ -71,38 +71,36 @@
     padding-bottom: 10px;
   }
 
-  .footer__contacts-address address {
+  .footer__contacts {
     display: flex;
     column-gap: 10px;
-    align-items: center;
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
-    font-style: normal;
-  }
-
-  .footer__contacts-address address svg {
-    width: 13px;
-    height: 16px;
-    align-self: stretch;
-  }
-
-  .footer__contacts-phone {
-    display: flex;
-    column-gap: 10px;
-    align-items: center;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-    font-style: normal;
     text-decoration: none;
     color: $base-black;
   }
 
-  .footer__contacts-phone svg {
-    width: 13px;
-    height: 16px;
-    align-self: stretch;
+  .footer__contacts svg {
+    flex-shrink: 0;
+  }
+
+  .footer__contacts--address {
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+
+  .footer__contacts--address address {
+    font-style: normal;
+  }
+
+  .footer__contacts--phone {
+    align-items: center;
+
+  }
+
+  .footer__logo-wrapper {
+    cursor: pointer;
   }
  }
 
