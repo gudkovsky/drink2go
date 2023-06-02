@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
   </head>
   <body class="page__body body">
     <header class="header">
@@ -16,6 +19,7 @@
           <!-- удалить из скрин ридеров - узнать как -->
         </div>
         <nav class="header__nav nav no-js active">
+          <!-- <nav class="header__nav nav no-js active"> -->
           <ul class="nav__list">
             <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
@@ -42,8 +46,8 @@
               </a>
             </li>
             <li class="user-box__item">
-              <!-- если в модуле header есть no-js - у user-box__menu выставлен display: none -->
-              <button type="button" class="user-box__link user-box__menu active" onclick="this.classList.toggle('active')">
+              <!-- если в модуле header есть no-js - у user-box__menu выставлен display: none VVV active -->
+              <button type="button" class="user-box__link user-box__menu">
                 <span class="visually-hidden">Кнопка открытия меню на мобильном устройстве</span>
                 <span class="user-box__burger-line"></span>
                 <span class="user-box__burger-line"></span>
@@ -362,8 +366,11 @@
         </section>
       </div>
 
-      <div class="map">
-        <img src="./assets/img/pictures/map.png" alt="Карта с точкой расположения магазина">
+      <div class="map" id="map" style="min-width: 320px; height: 420px">
+        <!-- <img src="./assets/img/pictures/map.png" alt="Карта с точкой расположения магазина"> -->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
       </div>
 
     </main>
@@ -451,7 +458,8 @@
           </svg>
       </a>
     </footer>
-    <script src="./js/script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" crossorigin=""></script>
+    <script src="./js/script.js" defer></script>
   </body>
 </html>
