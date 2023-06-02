@@ -10,7 +10,10 @@
   }
   .user-box__item {
     height: 100%;
-
+    transition: $transition-time;
+    &:active {
+      background-color: $base-secondary;
+    }
   }
   .user-box__link {
     display: flex;
@@ -34,9 +37,7 @@
     cursor: pointer;
     border: none;
     transition: $transition-time;
-    &:active {
-      background-color: $base-secondary;
-    }
+
   }
 
   .user-box__burger-line {

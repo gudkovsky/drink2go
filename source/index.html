@@ -5,6 +5,7 @@
     <title>Drink2go. Магазин кофе онлайн</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   </head>
   <body class="page__body body">
     <header class="header">
@@ -58,8 +59,71 @@
 
         <section class="promo">
           <h2 class="visually-hidden">Секция новинок магазина</h2>
-          <div class="main__wrapper wrapper">
-            <div class="promo__swiper">
+
+            <!-- SWIPER -->
+            <div class="swiper mySwiper">
+              <div class="promo__swiper swiper-wrapper">
+                  <div class="swiper__slide slide swiper-slide swiper__slide--flat-white">
+                    <div class="slide__image-wrapper">
+                      <img src="./assets/img/pictures/flat_white_slider.png" alt="" class="slide__image">
+                    </div>
+                    <div class="slide__text-wrapper">
+                      <span class="slide__badge">Новинка!</span>
+                      <h2 class="slide__title">Декаф Флэт Уайт</h2>
+                      <p class="slide__description">Свежесваренный кофе без кофеина из Эфиопии
+                        с натуральным фермерским молоком — то, что нужно
+                        для расслабления после тяжёлого рабочего дня</p>
+                        <div class="slide__buy-wrapper">
+                          <div class="slide__prices">
+                            <span class="slide__old-price">295₽</span>
+                            <span class="slide__new-price">225₽</span>
+                          </div>
+                          <button class="slide__buy-button button">Заказать</button>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper__slide slide swiper-slide swiper__slide--latte">
+                    <div class="slide__image-wrapper">
+                      <img src="./assets/img/pictures/lavender_img.png" alt="" class="slide__image">
+                    </div>
+                    <div class="slide__text-wrapper">
+                      <span class="slide__badge">Новинка!</span>
+                      <h2 class="slide__title">Лавандовый Латте</h2>
+                      <p class="slide__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+                        <div class="slide__buy-wrapper">
+                          <div class="slide__prices">
+                            <span class="slide__old-price">295₽</span>
+                            <span class="slide__new-price">225₽</span>
+                          </div>
+                          <button class="slide__buy-button button">Заказать</button>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper__slide slide swiper-slide swiper__slide--espresso">
+                    <div class="slide__image-wrapper">
+                      <img src="./assets/img/pictures/espresso_img.png" alt="" class="slide__image">
+                    </div>
+                    <div class="slide__text-wrapper">
+                      <span class="slide__badge">Новинка!</span>
+                      <h2 class="slide__title">Тройной Эспрессо</h2>
+                      <p class="slide__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+                        <div class="slide__buy-wrapper">
+                          <div class="slide__prices">
+                            <span class="slide__old-price">295₽</span>
+                            <span class="slide__new-price">225₽</span>
+                          </div>
+                          <button class="slide__buy-button button">Заказать</button>
+                        </div>
+                    </div>
+                  </div>
+
+                <!-- <div class="promo__pagination">
+                  <button>1 slide</button>
+                  <button>2 slide</button>
+                  <button>3 slide</button>
+                </div> -->
+              </div>
+              <div class="swiper-pagination"></div>
               <button class="promo__swiper-button promo__swiper-button--left">
                 <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M9.71661 0L11 1.32082L2.56677 10L11 18.6792L9.71661 20L0 10L9.71661 0Z" fill="#7859CF"/>
@@ -70,33 +134,9 @@
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M9.71661 0L11 1.32082L2.56677 10L11 18.6792L9.71661 20L0 10L9.71661 0Z" fill="#7859CF"/>
                   </svg>
               </button>
-              <div class="swiper__slide slide">
-                <div class="slide__image-wrapper">
-                  <img src="./assets/img/pictures/flat_white_slider.png" alt="Промо фото Флэт уайт" class="slide__image">
-                </div>
-                <div class="slide__text-wrapper">
-                  <span class="slide__badge">Новинка!</span>
-                  <h2 class="slide__title">Декаф Флэт Уайт</h2>
-                  <p class="slide__description">Свежесваренный кофе без кофеина из Эфиопии
-                    с натуральным фермерским молоком — то, что нужно
-                    для расслабления после тяжёлого рабочего дня</p>
-                    <div class="slide__buy-wrapper">
-                      <div class="slide__prices">
-                        <span class="slide__old-price">295₽</span>
-                        <span class="slide__new-price">225₽</span>
-                      </div>
-                      <button class="slide__buy-button button">Заказать</button>
-                    </div>
-                </div>
-              </div>
-              <div class="promo__pagination">
-                <button>1 slide</button>
-                <button>2 slide</button>
-                <button>3 slide</button>
-              </div>
-            </div>
           </div>
         </section>
+        <!-- <div class="main__wrapper wrapper"> -->
         <section class="features">
           <div class="wrapper features__wrapper">
             <span class="features__badge">Преимущества</span>
@@ -156,8 +196,8 @@
                 <fieldset class="filters__milk">
                   <legend class="filters__title">Наличие молока</legend>
                   <label >
-                    <input type="radio" value="not-important" name="milk">
-                    <span class="filters__radio-span"></span>
+                    <input type="radio" value="not-important" name="milk" checked disabled>
+                    <span class="filters__radio-span disabled"></span>
                     Неважно
                   </label>
                   <label >
@@ -167,7 +207,7 @@
                   </label>
                   <label >
                     <input type="radio" value="plant" name="milk">
-                    <span class="filters__radio-span"></span>
+                    <span class="filters__radio-span" ></span>
                     Только растительное
                   </label>
                   <label class="disabled">
@@ -184,8 +224,8 @@
                     Бразилия
                   </label>
                   <label >
-                    <input type="checkbox" value="efiopia" name="origin">
-                    <span class="filters__check-span"></span>
+                    <input type="checkbox" value="efiopia" name="origin" checked disabled>
+                    <span class="filters__check-span disabled"></span>
                     Эфиопия
                   </label>
                   <label >
@@ -412,5 +452,6 @@
       </a>
     </footer>
     <script src="./js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </body>
 </html>

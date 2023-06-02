@@ -1,0 +1,19 @@
+@media (min-width: $mobile-width) {
+  .swiper-pagination {
+    display: none;
+  }
+
+  .swiper-slide {
+    cursor: pointer;
+  }
+
+  .swiper__slide--flat-white {
+    background-color: $flat-white;
+  }
+  .swiper__slide--latte {
+    background-color: $lavander-latte;
+  }
+  .swiper__slide--espresso {
+    background-color: $espresso;
+  }
+}

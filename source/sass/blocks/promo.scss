@@ -1,14 +1,14 @@
 @media (min-width: $mobile-width) {
   .promo {
-    background-color: $flat-white;
     position: relative;
-    padding-top: 20px;
-    padding-bottom: 60px;
+    // padding-top: 20px;
+    // padding-bottom: 60px;
     overflow: hidden;
   }
 
   .promo__swiper-button {
     position: absolute;
+    z-index: 10;
     top: 0;
     display: block;
     height: 100%;
@@ -27,19 +27,19 @@
   .promo__swiper-button--left {
     left: 0;
     &:hover {
-      background: linear-gradient(to right, rgba(255, 255, 255, 0.242) 0%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
     }
     &:active {
-      background: linear-gradient(to right, rgba(121, 89, 207, 0.2) 0%, rgba(120, 89, 207, 0) 100%);
+      background: linear-gradient(to right, rgba(121, 89, 207, 0.5) 0%, rgba(120, 89, 207, 0) 100%);
     }
   }
   .promo__swiper-button--right {
     right: 0;
     &:hover {
-      background: linear-gradient(to left, rgba(255, 255, 255, 0.242) 0%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(to left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
     }
     &:active {
-      background: linear-gradient(to left, rgba(121, 89, 207, 0.2) 0%, rgba(120, 89, 207, 0) 100%);
+      background: linear-gradient(to left, rgba(121, 89, 207, 0.3) 0%, rgba(120, 89, 207, 0) 100%);
     }
   }
 
