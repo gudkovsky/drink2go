@@ -115,12 +115,7 @@
     }
   }
 
-  .filters__select {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
+
 
   .filters__sort .filters__title {
     margin: 0;
@@ -246,6 +241,8 @@
   .filtes__range-bar {
       position: absolute;
       height: 4px;
+      left: 0;
+      width: 263px;
       border-radius: 10px;
       background-color: $base-primary;
   }
@@ -303,5 +300,84 @@
       border-color: $light-gray;
       pointer-events: none;
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .filters {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 40px;
+    justify-content: space-between
+  }
+
+  .filters__title {
+    @include filter-heading;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .filters__milk,
+  .filters__origin {
+    margin-left: 0;
+    margin-right: 0;
+    row-gap: 20px;
+  }
+
+  .filters__origin {
+    margin-bottom: 0;
+  }
+
+  .filters__button-wrapper {
+    flex-direction: row;
+    width: 100%;
+    column-gap: 20px;
+    row-gap: 0;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .filters__button-wrapper button {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .filters__range {
+    width: 230px;
+    margin-bottom: 24px;
+    background-color: $light-gray;
+  }
+
+  .filtes__range-bar {
+    width: 192px;
+}
+
+  .filters__price-input {
+    width: 88px;
+  }
+
+  .filters__price-inputs {
+    justify-content: space-between;
+    column-gap: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filters__button-wrapper {
+    justify-content: flex-start;
+  }
+  .filters {
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 0;
+    row-gap: 0;
+    justify-content: space-between
+  }
+
+  .filters__origin {
+    margin-bottom: 40px;
   }
 }

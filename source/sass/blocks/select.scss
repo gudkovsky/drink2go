@@ -54,11 +54,11 @@
     }
   }
 
-  .select__pick.chosen {
+  .select__item.chosen {
     background-color: $base-primary;
     color: $base-white;
-    &::before {
-      display: none;
+    &:hover {
+      background-color: $base-primary;
     }
   }
 
@@ -115,5 +115,12 @@
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     border-bottom: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .select__header {
+    justify-content: flex-end;
+    column-gap: 10px;
   }
 }

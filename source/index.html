@@ -21,8 +21,8 @@
         <nav class="header__nav nav no-js active">
           <!-- <nav class="header__nav nav no-js active"> -->
           <ul class="nav__list">
-            <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
+            <li class="nav__item"><a href="#" class="nav__link nav__link--current">Главная</a></li>
+            <li class="nav__item"><a href="#catalog" class="nav__link">Каталог</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Доставка</a></li>
             <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
           </ul>
@@ -31,7 +31,7 @@
           <ul class="user-box__list">
             <li class="user-box__item">
               <a href="" class="user-box__link user-box__profile">
-                <span class="visually-hidden">Ссылка на профиль</span>
+                <span class="user-box__item-title">Профиль</span>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6667 4C10.6667 5.47276 9.47276 6.66667 8 6.66667C6.52724 6.66667 5.33333 5.47276 5.33333 4C5.33333 2.52724 6.52724 1.33333 8 1.33333C9.47276 1.33333 10.6667 2.52724 10.6667 4ZM12 4C12 6.20914 10.2091 8 8 8C5.79086 8 4 6.20914 4 4C4 1.79086 5.79086 0 8 0C10.2091 0 12 1.79086 12 4ZM3.19673 12.3102C4.43611 11.2774 6.1613 10.6667 8 10.6667C9.8387 10.6667 11.5639 11.2774 12.8033 12.3102C14.0354 13.337 14.6667 14.6719 14.6667 16H16C16 14.2321 15.1573 12.5363 13.6569 11.286C12.1566 10.0357 10.1218 9.33333 8 9.33333C5.87821 9.33333 3.8434 10.0357 2.34315 11.286C0.842686 12.5363 0 14.2321 0 16L1.33333 16C1.33333 14.6719 1.96465 13.337 3.19673 12.3102Z" fill="#333333"/>
                   </svg>
@@ -39,7 +39,7 @@
             </li>
             <li class="user-box__item">
               <a href="" class="user-box__link user-box__cart">
-                <span class="visually-hidden">Ссылка на корзину</span>
+                <span class="user-box__item-title">Корзина</span>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M5.66091 3.87546L5.89351 6.66667H10.1065L10.3391 3.87546C10.4531 2.50699 9.37321 1.33333 8 1.33333C6.62679 1.33333 5.54687 2.50699 5.66091 3.87546ZM11.4444 6.66667L11.6678 3.98618C11.8466 1.84036 10.1533 0 8 0C5.84674 0 4.15336 1.84036 4.33218 3.98618L4.55556 6.66667H1.34687H0L0.190476 8L1.00626 13.7105C1.19393 15.0242 2.31905 16 3.64612 16H12.3539C13.6809 16 14.8061 15.0242 14.9937 13.7105L15.8095 8L16 6.66667H14.6531H11.4444ZM11.3333 8H11.2801L11.0579 10.6667H14.0817L14.4627 8H11.3333ZM9.94213 8H6.05787L6.28009 10.6667H9.71991L9.94213 8ZM4.71991 8H4.66667H1.53735L1.9183 10.6667H4.94213L4.71991 8ZM6.61342 14.6667L6.3912 12H9.6088L9.38658 14.6667H6.61342ZM10.9468 12L10.7245 14.6667H12.3539C13.0174 14.6667 13.58 14.1788 13.6738 13.5219L13.8912 12H10.9468ZM5.05324 12L5.27547 14.6667H3.64612C2.98259 14.6667 2.42003 14.1788 2.32619 13.5219L2.10877 12H5.05324Z" fill="#333333"/>
                   </svg>
@@ -65,67 +65,67 @@
           <h2 class="visually-hidden">Секция новинок магазина</h2>
 
             <!-- SWIPER -->
-            <div class="swiper mySwiper">
+            <div class="swiper">
               <div class="promo__swiper swiper-wrapper">
                   <div class="swiper__slide slide swiper-slide swiper__slide--flat-white">
-                    <div class="slide__image-wrapper">
-                      <img src="./assets/img/pictures/flat_white_slider.png" alt="" class="slide__image">
-                    </div>
-                    <div class="slide__text-wrapper">
-                      <span class="slide__badge">Новинка!</span>
-                      <h2 class="slide__title">Декаф Флэт Уайт</h2>
-                      <p class="slide__description">Свежесваренный кофе без кофеина из Эфиопии
-                        с натуральным фермерским молоком — то, что нужно
-                        для расслабления после тяжёлого рабочего дня</p>
-                        <div class="slide__buy-wrapper">
-                          <div class="slide__prices">
-                            <span class="slide__old-price">295₽</span>
-                            <span class="slide__new-price">225₽</span>
+                    <div class="slide__container">
+                      <div class="slide__image-wrapper">
+                        <img src="./assets/img/pictures/flat_white_slider.png" alt="" class="slide__image">
+                      </div>
+                      <div class="slide__text-wrapper">
+                        <span class="slide__badge">Новинка!</span>
+                        <h2 class="slide__title">Декаф Флэт Уайт</h2>
+                        <p class="slide__description">Свежесваренный кофе без кофеина из Эфиопии
+                          с натуральным фермерским молоком — то, что нужно
+                          для расслабления после тяжёлого рабочего дня</p>
+                          <div class="slide__buy-wrapper">
+                            <div class="slide__prices">
+                              <span class="slide__old-price">295₽</span>
+                              <span class="slide__new-price">225₽</span>
+                            </div>
+                            <button class="slide__buy-button button">Заказать</button>
                           </div>
-                          <button class="slide__buy-button button">Заказать</button>
-                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="swiper__slide slide swiper-slide swiper__slide--latte">
-                    <div class="slide__image-wrapper">
-                      <img src="./assets/img/pictures/lavender_img.png" alt="" class="slide__image">
-                    </div>
-                    <div class="slide__text-wrapper">
-                      <span class="slide__badge">Новинка!</span>
-                      <h2 class="slide__title">Лавандовый Латте</h2>
-                      <p class="slide__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
-                        <div class="slide__buy-wrapper">
-                          <div class="slide__prices">
-                            <span class="slide__old-price">295₽</span>
-                            <span class="slide__new-price">225₽</span>
+                    <div class="slide__container">
+                      <div class="slide__image-wrapper">
+                        <img src="./assets/img/pictures/lavender_img.png" alt="" class="slide__image">
+                      </div>
+                      <div class="slide__text-wrapper">
+                        <span class="slide__badge">Новинка!</span>
+                        <h2 class="slide__title">Лавандовый Латте</h2>
+                        <p class="slide__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+                          <div class="slide__buy-wrapper">
+                            <div class="slide__prices">
+                              <span class="slide__old-price">295₽</span>
+                              <span class="slide__new-price">225₽</span>
+                            </div>
+                            <button class="slide__buy-button button">Заказать</button>
                           </div>
-                          <button class="slide__buy-button button">Заказать</button>
-                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="swiper__slide slide swiper-slide swiper__slide--espresso">
-                    <div class="slide__image-wrapper">
-                      <img src="./assets/img/pictures/espresso_img.png" alt="" class="slide__image">
-                    </div>
-                    <div class="slide__text-wrapper">
-                      <span class="slide__badge">Новинка!</span>
-                      <h2 class="slide__title">Тройной Эспрессо</h2>
-                      <p class="slide__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
-                        <div class="slide__buy-wrapper">
-                          <div class="slide__prices">
-                            <span class="slide__old-price">295₽</span>
-                            <span class="slide__new-price">225₽</span>
+                    <div class="slide__container">
+                      <div class="slide__image-wrapper">
+                        <img src="./assets/img/pictures/espresso_img.png" alt="" class="slide__image">
+                      </div>
+                      <div class="slide__text-wrapper">
+                        <span class="slide__badge">Новинка!</span>
+                        <h2 class="slide__title">Тройной Эспрессо</h2>
+                        <p class="slide__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+                          <div class="slide__buy-wrapper">
+                            <div class="slide__prices">
+                              <span class="slide__old-price">295₽</span>
+                              <span class="slide__new-price">225₽</span>
+                            </div>
+                            <button class="slide__buy-button button">Заказать</button>
                           </div>
-                          <button class="slide__buy-button button">Заказать</button>
-                        </div>
+                      </div>
                     </div>
                   </div>
-
-                <!-- <div class="promo__pagination">
-                  <button>1 slide</button>
-                  <button>2 slide</button>
-                  <button>3 slide</button>
-                </div> -->
               </div>
               <div class="swiper-pagination"></div>
               <button class="promo__swiper-button promo__swiper-button--left">
@@ -170,7 +170,7 @@
           </div>
         </section>
 
-        <section class="catalog">
+        <section class="catalog" id="catalog">
           <div class="wrapper catalog__wrapper">
             <span class="catalog__badge">Каталог</span>
             <h2 class="catalog__title">Каталог кофейных напитков</h2>
@@ -181,7 +181,7 @@
 
                   <div class="filters__range">
                     <!-- add class "disabled" to disable pointer events and change style -->
-                    <div style="left: 0; width: 263px" class="filtes__range-bar">
+                    <div class="filtes__range-bar">
                       <button class="filtes__range-toggle filtes__range-toggle--min" type="button">
                           <span class="visually-hidden">ползунок min</span>
                       </button>
@@ -254,17 +254,17 @@
                   </div>
               </form>
 
-              <div class="filters__select select">
+              <div class="catalog__select select">
                 <header class="select__header">
                   <h3 class="filters__title select__title">Сортировка:</h3>
-                  <div class="cities__item select__pick active chosen" tabindex="0">по умолчанию</div>
+                  <div class="select__pick  " tabindex="0">по умолчанию</div>
                 </header>
 
-                <ul class="cities__list select__list dropdown-active">
-                  <li class="cities__city select__item js-default" data-id="js-default">по умолчанию</li>
-                  <li class="cities__city select__item js-high" data-id="js-high">сначала дорогие</li>
-                  <li class="cities__city select__item js-low" data-id="low">сначала дешевые</li>
-                  <li class="cities__city select__item js-rating" data-id="js-rating">высокий рейтинг</li>
+                <ul class="select__list">
+                  <li class="select__item">по умолчанию</li>
+                  <li class="select__item">сначала дорогие</li>
+                  <li class="select__item">сначала дешевые</li>
+                  <li class="select__item">высокий рейтинг</li>
                 </ul>
               </div>
 
@@ -356,9 +356,9 @@
               </div>
               <div class="catalog__pagination pagination">
                 <button class="pagination__button pagination__button--prev"><span class="visually-hidden">Кнопка "предыдущая страница"</span></button>
-                <a class="pagination__page" href="">1</a>
-                <a class="pagination__page pagination__page--current" href="">2</a>
-                <a class="pagination__page" href="">3</a>
+                <a class="pagination__page  " href="#">1</a>
+                <a class="pagination__page pagination__page--current" href="#">2</a>
+                <a class="pagination__page " href="#">3</a>
                 <button class="pagination__button pagination__button--next"><span class="visually-hidden">Кнопка "следующая страница"</span></button>
               </div>
             </div>
@@ -366,7 +366,7 @@
         </section>
       </div>
 
-      <div class="map" id="map" style="min-width: 320px; height: 420px">
+      <div class="map" id="map">
         <!-- <img src="./assets/img/pictures/map.png" alt="Карта с точкой расположения магазина"> -->
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
@@ -375,7 +375,6 @@
 
     </main>
     <footer class="footer">
-
         <section class="footer__socials socials">
           <div class="wrapper footer__wrapper">
             <div class="footer__logo-wrapper logo" href="" title="К началу" onclick="{window.scrollTo(0, 0);}">
@@ -409,47 +408,49 @@
           </div>
         </section>
 
-        <section class="footer-nav  footer__wrapper">
-          <div class="wrapper">
-            <h4 class="footer__title">Интернет-магазин</h4>
-            <ul class="footer-nav__list">
-              <li class="footer-nav__item"><a href="#" class="footer-nav__link">Главная</a></li>
-              <li class="footer-nav__item"><a href="#" class="footer-nav__link">Каталог</a></li>
-              <li class="footer-nav__item"><a href="#" class="footer-nav__link">Доставка</a></li>
-              <li class="footer-nav__item"><a href="#" class="footer-nav__link">О нас</a></li>
-            </ul>
-          </div>
-        </section>
+        <div class="footer__container">
+          <section class="footer-nav  footer__wrapper">
+            <div class="wrapper">
+              <h4 class="footer__title">Интернет-магазин</h4>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">Главная</a></li>
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">Каталог</a></li>
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">Доставка</a></li>
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">О нас</a></li>
+              </ul>
+            </div>
+          </section>
 
-        <section class="footer__media  footer__wrapper">
-          <div class="wrapper">
-            <h4 class="footer__title">Медиа</h4>
-            <ul class="footer__media-list">
-              <li class="footer__media-item"><a href="#" class="footer__media-link">Блог</a></li>
-              <li class="footer__media-item"><a href="#" class="footer__media-link">Информация для СМИ</a></li>
-              <li class="footer__media-item"><a href="#" class="footer__media-link">Правовая информация</a></li>
-            </ul>
-          </div>
-        </section>
-        <section class="footer__contacts  footer__wrapper">
-          <div class="wrapper">
-            <h4 class="footer__title">Контакты</h4>
-            <a href="https://yandex.ru/maps/-/CCUkNRRZ0B" class="footer__contacts footer__contacts--address">
-              <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8 6.5C11.8 8.83027 10.4332 10.9174 8.8884 12.5109C8.13169 13.2915 7.37106 13.9131 6.79878 14.3393C6.6918 14.419 6.59177 14.4916 6.5 14.5569C6.40823 14.4916 6.3082 14.419 6.20122 14.3393C5.62894 13.9131 4.86831 13.2915 4.1116 12.5109C2.56678 10.9174 1.2 8.83027 1.2 6.5C1.2 3.57289 3.57289 1.2 6.5 1.2C9.42711 1.2 11.8 3.57289 11.8 6.5ZM13 6.5C13 12.0899 6.5 16 6.5 16C6.5 16 0 12.0899 0 6.5C0 2.91015 2.91015 0 6.5 0C10.0899 0 13 2.91015 13 6.5ZM8.8 6.5C8.8 7.77026 7.77026 8.8 6.5 8.8C5.22974 8.8 4.2 7.77026 4.2 6.5C4.2 5.22974 5.22974 4.2 6.5 4.2C7.77026 4.2 8.8 5.22974 8.8 6.5ZM10 6.5C10 8.433 8.433 10 6.5 10C4.567 10 3 8.433 3 6.5C3 4.567 4.567 3 6.5 3C8.433 3 10 4.567 10 6.5Z" fill="#7859CF"/>
-              </svg>
-              <address>Санкт-Петербург, набережная реки Карповки, дом 5</address>
-            </a>
-            <a href="tel:+79778587980" class="footer__contacts footer__contacts--phone">
-              <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.47771 1.49035C0.407036 2.09016 -0.173009 3.23613 0.0457595 4.31941L0.404071 6.09367C1.3302 9.21701 2.90461 11.863 5.22921 14.2029L6.63362 15.3911C7.49109 16.1166 8.80393 16.2022 9.8746 15.6024L12.1043 14.3533C12.9766 13.8646 13.2662 12.8186 12.7298 12.0941L10.7951 9.48096C10.2793 8.7842 9.20705 8.66949 8.42947 9.22787L7.05383 10.2157C5.82614 9.33632 5.0461 8.02537 4.87507 6.55403L6.44457 5.89198C7.33172 5.51776 7.76545 4.55939 7.4015 3.77755L6.03652 0.845267C5.65806 0.0322596 4.57968 -0.247395 3.7074 0.241264L1.47771 1.49035ZM1.2824 4.01819C1.16306 3.42725 1.47948 2.80211 2.06354 2.47492L4.29323 1.22582C4.5113 1.10366 4.78089 1.17357 4.87551 1.37683L6.24049 4.30911C6.33147 4.50457 6.22304 4.74416 6.00126 4.83771L3.57088 5.8629L3.58692 6.27871C3.66894 8.40504 4.79869 10.3037 6.65548 11.4358L7.01858 11.6572L9.14878 10.1275C9.34317 9.98792 9.61123 10.0166 9.74019 10.1908L11.6748 12.8039C11.8089 12.9851 11.7365 13.2466 11.5185 13.3687L9.28877 14.6178C8.70471 14.945 7.98854 14.8983 7.52079 14.5026L6.11637 13.3144C4.3893 11.6193 2.29008 8.09128 1.64071 5.79245L1.2824 4.01819Z" fill="#7859CF"/>
-              </svg>
-              <span>+7 (999) 999-99-99</span>
-            </a>
+          <section class="footer__media  footer__wrapper">
+            <div class="wrapper">
+              <h4 class="footer__title">Медиа</h4>
+              <ul class="footer__media-list">
+                <li class="footer__media-item"><a href="#" class="footer__media-link">Блог</a></li>
+                <li class="footer__media-item"><a href="#" class="footer__media-link">Информация для СМИ</a></li>
+                <li class="footer__media-item"><a href="#" class="footer__media-link">Правовая информация</a></li>
+              </ul>
+            </div>
+          </section>
+          <section class="footer__contacts  footer__wrapper">
+            <div class="wrapper">
+              <h4 class="footer__title">Контакты</h4>
+              <a href="https://yandex.ru/maps/-/CCUkNRRZ0B" class="footer__contacts footer__contacts--address">
+                <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8 6.5C11.8 8.83027 10.4332 10.9174 8.8884 12.5109C8.13169 13.2915 7.37106 13.9131 6.79878 14.3393C6.6918 14.419 6.59177 14.4916 6.5 14.5569C6.40823 14.4916 6.3082 14.419 6.20122 14.3393C5.62894 13.9131 4.86831 13.2915 4.1116 12.5109C2.56678 10.9174 1.2 8.83027 1.2 6.5C1.2 3.57289 3.57289 1.2 6.5 1.2C9.42711 1.2 11.8 3.57289 11.8 6.5ZM13 6.5C13 12.0899 6.5 16 6.5 16C6.5 16 0 12.0899 0 6.5C0 2.91015 2.91015 0 6.5 0C10.0899 0 13 2.91015 13 6.5ZM8.8 6.5C8.8 7.77026 7.77026 8.8 6.5 8.8C5.22974 8.8 4.2 7.77026 4.2 6.5C4.2 5.22974 5.22974 4.2 6.5 4.2C7.77026 4.2 8.8 5.22974 8.8 6.5ZM10 6.5C10 8.433 8.433 10 6.5 10C4.567 10 3 8.433 3 6.5C3 4.567 4.567 3 6.5 3C8.433 3 10 4.567 10 6.5Z" fill="#7859CF"/>
+                </svg>
+                <address>Санкт-Петербург, набережная реки Карповки, дом 5</address>
+              </a>
+              <a href="tel:+79778587980" class="footer__contacts footer__contacts--phone">
+                <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.47771 1.49035C0.407036 2.09016 -0.173009 3.23613 0.0457595 4.31941L0.404071 6.09367C1.3302 9.21701 2.90461 11.863 5.22921 14.2029L6.63362 15.3911C7.49109 16.1166 8.80393 16.2022 9.8746 15.6024L12.1043 14.3533C12.9766 13.8646 13.2662 12.8186 12.7298 12.0941L10.7951 9.48096C10.2793 8.7842 9.20705 8.66949 8.42947 9.22787L7.05383 10.2157C5.82614 9.33632 5.0461 8.02537 4.87507 6.55403L6.44457 5.89198C7.33172 5.51776 7.76545 4.55939 7.4015 3.77755L6.03652 0.845267C5.65806 0.0322596 4.57968 -0.247395 3.7074 0.241264L1.47771 1.49035ZM1.2824 4.01819C1.16306 3.42725 1.47948 2.80211 2.06354 2.47492L4.29323 1.22582C4.5113 1.10366 4.78089 1.17357 4.87551 1.37683L6.24049 4.30911C6.33147 4.50457 6.22304 4.74416 6.00126 4.83771L3.57088 5.8629L3.58692 6.27871C3.66894 8.40504 4.79869 10.3037 6.65548 11.4358L7.01858 11.6572L9.14878 10.1275C9.34317 9.98792 9.61123 10.0166 9.74019 10.1908L11.6748 12.8039C11.8089 12.9851 11.7365 13.2466 11.5185 13.3687L9.28877 14.6178C8.70471 14.945 7.98854 14.8983 7.52079 14.5026L6.11637 13.3144C4.3893 11.6193 2.29008 8.09128 1.64071 5.79245L1.2824 4.01819Z" fill="#7859CF"/>
+                </svg>
+                <span>+7 (999) 999-99-99</span>
+              </a>
 
-            </ul>
-          </div>
-        </section>
+              </ul>
+            </div>
+          </section>
+        </div>
       </div>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright" title="верстка и интерактивность: Ilya Gudkov, gh: @gudkovsky">
         <svg width="112" height="16" viewBox="0 0 112 16" fill="none" xmlns="http://www.w3.org/2000/svg">

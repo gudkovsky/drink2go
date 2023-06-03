@@ -17,3 +17,37 @@
     background-color: $espresso;
   }
 }
+
+// TABLET
+@media (min-width: $tablet-width) {
+  .swiper {
+    height: 828px;
+  }
+}
+
+// DESKTOP
+
+@media (min-width: $desktop-width) {
+  .swiper {
+    height: 714px;
+  }
+
+  .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 62px;
+    height: 4px;
+    border-radius: 0;
+    opacity: 1;
+    background-color: $base-white;
+    z-index: 99;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: $base-primary;
+  }
+}

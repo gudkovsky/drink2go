@@ -51,3 +51,20 @@
     display: none;
   }
 }
+
+// TABLET
+
+@media (min-width: $tablet-width) {
+  .promo__swiper-button {
+    height: 640px;
+  }
+}
+
+// DESKTOP
+
+@media (min-width: $desktop-width) {
+  .promo__swiper-button {
+    height: 100%;
+    width: 80px;
+  }
+}

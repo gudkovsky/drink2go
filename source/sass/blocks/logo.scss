@@ -1,9 +1,25 @@
 
 
-@media (min-width: $mobile-width) and (max-width: $tablet-width) {
-  .logo {
+@media (min-width: $mobile-width) {
     .logo__text {
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+      .logo {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+      }
+
+      .logo__text {
+        display: block;
+        max-width: 130px;
+        font-family: $font-primary;
+        font-size: 12px;
+        line-height: 16px;
+        color: $base-black;
+
+      }
   }

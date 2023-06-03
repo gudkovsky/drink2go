@@ -1,6 +1,4 @@
-
-
-@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+@media (min-width: $mobile-width) {
   .header__wrapper {
     position: relative;
     display: flex;
@@ -47,4 +45,52 @@
   .header__wrapper.no-js .user-box__menu {
     display: none;
   }
+}
+
+// TABLET
+
+@media (min-width: $tablet-width) {
+
+  .header__nav {
+    position: static;
+    order: 2;
+    width: auto;
+    transform: scaleY(1);
+  }
+
+  .header__user-box {
+    order: 3;
+  }
+
+  .header__wrapper {
+    padding: 0px;
+  }
+
+  .header__wrapper .header__logo-wrapper {
+    padding-left: 20px;
+  }
+
+  .header__wrapper .header__user-box {
+    padding-right: 20px;
+  }
+
+  .user-box {
+    align-self: stretch;
+  }
+
+}
+
+// DESKTOP
+
+@media (min-width: $desktop-width) {
+
+
+  .header__wrapper .header__logo-wrapper {
+    padding-left: 40px;
+  }
+
+  .header__wrapper .header__user-box {
+    padding-right: 40px;
+  }
+
 }

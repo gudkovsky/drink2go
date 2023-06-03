@@ -1,11 +1,17 @@
 @media (min-width: $mobile-width) {
   .map {
-    width: 100%;
-    object-fit: cover;
-
+    min-width: 320px;
+    height: 420px;
+    background-image: url("../../assets/img/pictures/map.png");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
-  .map img {
-    margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    height: 480px;
   }
+
 }

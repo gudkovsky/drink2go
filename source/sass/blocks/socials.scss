@@ -1,4 +1,13 @@
 @media (min-width: $mobile-width) {
+  .socials {
+    flex-shrink: 0;
+    width: 100%;
+  }
+
+  .socials__wrapper {
+    justify-content: space-between;
+  }
+
   .socials__links {
     display: flex;
     flex-direction: row;
