@@ -1,6 +1,7 @@
 @media (min-width: $mobile-width) {
   .card {
     display: flex;
+    max-height: 420px;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -16,9 +17,17 @@
     align-self: stretch;
   }
 
+  .card a {
+    text-decoration: none;
+    color: $base-black;
+  }
+
   .card p {
     margin-top: 0;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .card__buy-wrapper {
@@ -35,20 +44,30 @@
     color: $base-black;
   }
 
-  .card__button {
+  .card__button.button {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 36px;
     width: 140px;
     column-gap: 6px;
+    & span {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  .card img {
+    max-height: 188px;
+    margin-bottom: 10px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .card {
     max-width: 350px;
-    padding: 40px 20px 20px 20px;
+    max-height: 440px;
+    padding: 50px 30px 40px 30px;
     background-color: $base-white;
     text-align: left;
     transition: $transition-time;
@@ -57,16 +76,21 @@
     }
   }
 
+  .card img {
+
+    margin-bottom: 20px
+  }
+
   .card h3 {
     @include h3--tablet;
     margin-top: 10px;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     align-self: stretch;
   }
 
   .card p {
     margin-top: 0;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
 
   .card__buy-wrapper {
@@ -91,54 +115,23 @@
     width: 140px;
     column-gap: 6px;
   }
+
 }
 
 // DESKTOP
 
 @media (min-width: $desktop-width) {
   .card {
-    max-width: 320px;
-    padding: 50px 30px 30px;
-    background-color: $base-white;
-    text-align: left;
-    transition: $transition-time;
-    &:hover {
-      box-shadow: 0 2px 5px 0 #00000030;
-    }
+    max-width: 350px;
+    max-height: 460px;
+    padding: 50px 30px 40px 30px;
   }
 
   .card h3 {
     @include h3--desktop;
     margin-top: 10px;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     align-self: stretch;
   }
 
-  .card p {
-    margin-top: 0;
-    margin-bottom: 16px;
-  }
-
-  .card__buy-wrapper {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-self: stretch;
-  }
-
-  .card__price {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 32px;
-    color: $base-black;
-  }
-
-  .card__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 36px;
-    width: 140px;
-    column-gap: 6px;
-  }
 }

@@ -53,7 +53,13 @@
       text-decoration: none;
       text-transform: uppercase;
       width: fit-content;
-      padding: 20px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
 
       &:hover,
       &:focus {
@@ -74,22 +80,24 @@
       border-top: none;
     }
 
-    .nav__link {
-      padding-top: 40px;
-      padding-bottom: 40px;
-    }
-
     .nav__link--current {
       position: relative;
+      color: $base-primary;
+      pointer-events: none;
       &::after {
         content: '';
         position: absolute;
         bottom: 0;
         left: 0;
-        height: 2px;
+        height: 3px;
         width: 100%;
         background-color: $base-primary;
       }
     }
+    }
 
+    @media (min-width: $tablet-width) {
+      .nav__list {
+        column-gap: 20px;
+      }
     }

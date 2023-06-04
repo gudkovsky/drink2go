@@ -4,8 +4,9 @@
     padding: 20px 0 30px;
     justify-content: center;
     align-items: center;
+    column-gap: 3px;
     transition: $transition-time;
-
+    text-decoration: none;
     &:hover svg path,
     &:focus svg path
     {
@@ -15,5 +16,26 @@
     &:active svg path {
       fill: $primary-darker;
     }
+
+    &:hover span {
+      color: $base-primary;
+      transition: $transition-time;
+    }
+
+    &:active span {
+      color: $primary-darker;
+    }
+  }
+
+  .copyright span {
+    font-size: 12px;
+    line-height: 12px;
+    color: $base-gray;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding-top: 30px;
   }
 }

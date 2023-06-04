@@ -89,6 +89,10 @@
     min-height: 100%;
   }
 
+  .user-box__list {
+    column-gap: 20px;
+  }
+
   .user-box__item-title {
     display: flex;
     order: 99;

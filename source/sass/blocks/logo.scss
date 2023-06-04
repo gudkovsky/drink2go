@@ -13,6 +13,10 @@
         column-gap: 20px;
       }
 
+      .logo__image {
+        margin-bottom: 3px;
+      }
+
       .logo__text {
         display: block;
         max-width: 130px;
@@ -20,7 +24,8 @@
         font-size: 12px;
         line-height: 16px;
         color: $base-black;
-
+        margin-top: 5px;
+        margin-bottom: 10px;
       }
 
       .logo--footer {

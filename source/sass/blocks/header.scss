@@ -38,7 +38,7 @@
     padding-left: 20px;
   }
 
-  .header__wrapper .header__user-box {
+  .header__wrapper.no-js .header__user-box {
     padding-right: 20px;
   }
 
@@ -83,14 +83,17 @@
 // DESKTOP
 
 @media (min-width: $desktop-width) {
-
+  .header__wrapper {
+    max-width: 1360px;
+    margin: 0 auto;
+  }
 
   .header__wrapper .header__logo-wrapper {
     padding-left: 40px;
   }
 
   .header__wrapper .header__user-box {
-    padding-right: 40px;
+    padding-right: 20px;
   }
 
 }

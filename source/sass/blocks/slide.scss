@@ -14,6 +14,7 @@
     align-items: center;
     text-align: center;
     margin-bottom: 60px;
+    padding-top: 5px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -25,6 +26,7 @@
 
   .slide__badge {
     @include badge;
+    margin-bottom: 5px;
   }
 
   .slide__title {
@@ -110,15 +112,22 @@
 
   .slide__title {
     @include slide__title--tablet;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 5px
   }
 
   .slide__description {
     @include slide__text--medium;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     min-height: 100px;
     max-width: 610px;
+  }
+
+  .slide__buy-wrapper {
+    align-items: center;
   }
 }
 
@@ -136,19 +145,18 @@
 
   .slide__text-wrapper {
     order: 2;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     text-align: left;
-    margin-bottom: 0px;
-    padding-top: 60px;
-    // padding-left: 20px;
+    padding-top: 150px;
+    padding-left: 30px;
     // padding-right: 20px;
 
   }
 
   .slide__image {
     margin-top: 0;
-    margin-left: 105px;
+    margin-left: 85px;
     width: 600px;
   }
 
@@ -162,15 +170,15 @@
 
   .slide__title {
     @include slide__title--desktop;
-
+    margin-bottom: 15px;
   }
 
   .slide__description {
-
     @include slide__text--large;
     margin-top: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     min-height: 100px;
     max-width: 610px;
+    padding-left: 0;
   }
 }

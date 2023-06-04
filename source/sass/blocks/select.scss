@@ -124,3 +124,10 @@
     column-gap: 10px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .select__header {
+    margin-top: -5px;
+  }
+
+}
