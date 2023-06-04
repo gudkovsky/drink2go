@@ -41,17 +41,17 @@ $transition-time: 0.4s;
   text-align: center;
   letter-spacing: 0.02em;
   color: $base-black;
-}
+};
 
 @mixin slide__title--tablet {
   font-size: 56px;
   line-height: 80px;
-}
+};
 
 @mixin slide__title--desktop {
   font-size: 56px;
   line-height: 80px;
-}
+};
 
 // slide prices
 
@@ -60,14 +60,14 @@ $transition-time: 0.4s;
   line-height: 32px;
   text-decoration-line: line-through;
   color: $base-primary;
-}
+};
 
 @mixin new-price {
   font-weight: 600;
   font-size: 20px;
   line-height: 32px;
   color: $base-black;
-}
+};
 
 // Headings
 // h2
@@ -77,17 +77,17 @@ $transition-time: 0.4s;
   font-size: 24px;
   line-height: 36px;
   color: $base-black;
-}
+};
 
 @mixin h2--tablet {
   font-size: 42px;
   line-height: 64px;
-}
+};
 
 @mixin h2--desktop {
   font-size: 42px;
   line-height: 64px;
-}
+};
 
 // h3
 
@@ -96,17 +96,17 @@ $transition-time: 0.4s;
   font-size: 18px;
   line-height: 32px;
   color: $base-black;
-}
+};
 
 @mixin h3--tablet {
   font-size: 24px;
   line-height: 36px;
-}
+};
 
 @mixin h3--desktop {
   font-size: 24px;
   line-height: 36px;
-}
+};
 
 // h4
 
@@ -116,7 +116,7 @@ $transition-time: 0.4s;
   line-height: 20px;
   letter-spacing: 0.02em;
   color: $base-primary;
-}
+};
 
 // Badge
 
@@ -127,7 +127,7 @@ $transition-time: 0.4s;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $base-primary;
-}
+};
 
 // Filters
 
@@ -136,7 +136,7 @@ $transition-time: 0.4s;
   font-size: 16px;
   line-height: 24px;
   color: $base-black;
-}
+};
 
 
 // Descriptions
@@ -144,17 +144,17 @@ $transition-time: 0.4s;
 @mixin slide__text--small {
   font-size: 14px;
   line-height: 20px;
-}
+};
 
 @mixin slide__text--medium {
   font-size: 20px;
   line-height: 32px;
-}
+};
 
 @mixin slide__text--large {
   font-size: 20px;
   line-height: 32px;
-}
+};
 
 // TOOLS
 
@@ -162,8 +162,7 @@ $transition-time: 0.4s;
 @mixin outline($color) {
   outline: 3px solid $color;
   outline-offset: -3px;
-
-}
+};
 
 // RESPONSIVE TOOLS
 
@@ -179,18 +178,18 @@ $mobile-width: 300px;
   min-width: 1440px;
   padding-left: 40px;
   padding-right: 40px;
-}
+};
 
 @mixin tablet-wrapper {
   min-width: 768px;
   padding-left: 20px;
   padding-right: 20px;
-}
+};
 
 @mixin mobile-wrapper {
   min-width: 320px;
   padding-left: 20px;
   padding-right: 20px;
-}
+};
 
 
