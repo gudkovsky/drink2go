@@ -308,7 +308,7 @@
       pointer-events: none;
     }
   }
-}
+};
 
 @media (min-width: $tablet-width) {
   .filters {
@@ -373,7 +373,7 @@
     justify-content: flex-start;
     column-gap: 20px;
   }
-}
+};
 
 @media (min-width: $desktop-width) {
   .filters__button-wrapper {
@@ -416,4 +416,4 @@
     padding-left: 26px;
     padding-right: 26px;
   }
-}
+};

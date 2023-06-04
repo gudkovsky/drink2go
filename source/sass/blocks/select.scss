@@ -116,18 +116,17 @@
     border-bottom-left-radius: 5px;
     border-bottom: none;
   }
-}
+};
 
 @media (min-width: $tablet-width) {
   .select__header {
     justify-content: flex-end;
     column-gap: 10px;
   }
-}
+};
 
 @media (min-width: $desktop-width) {
   .select__header {
     margin-top: -5px;
   }
-
-}
+};

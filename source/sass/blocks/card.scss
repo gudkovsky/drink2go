@@ -55,13 +55,13 @@
       font-size: 14px;
       line-height: 20px;
     }
-  }
+  };
 
   .card img {
     max-height: 188px;
     margin-bottom: 10px;
   }
-}
+};
 
 @media (min-width: $tablet-width) {
   .card {
@@ -115,8 +115,7 @@
     width: 140px;
     column-gap: 6px;
   }
-
-}
+};
 
 // DESKTOP
 
@@ -133,5 +132,4 @@
     margin-bottom: 10px;
     align-self: stretch;
   }
-
-}
+};

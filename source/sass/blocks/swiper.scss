@@ -16,14 +16,14 @@
   .swiper__slide--espresso {
     background-color: $espresso;
   }
-}
+};
 
 // TABLET
 @media (min-width: $tablet-width) {
   .swiper {
     height: 828px;
   }
-}
+};
 
 // DESKTOP
 
@@ -50,4 +50,4 @@
   .swiper-pagination .swiper-pagination-bullet-active {
     background-color: $base-primary;
   }
-}
+};

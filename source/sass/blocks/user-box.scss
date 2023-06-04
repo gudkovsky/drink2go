@@ -1,12 +1,10 @@
 @media (min-width: $mobile-width) {
   .user-box__list {
     display: flex;
-
     margin: 0;
     padding: 0;
     align-items: center;
     list-style-type: none;
-
   }
   .user-box__item {
     height: 100%;
@@ -37,7 +35,6 @@
     cursor: pointer;
     border: none;
     transition: $transition-time;
-
   }
 
   .user-box__burger-line {
@@ -65,8 +62,7 @@
   .user-box__item-title {
     display: none;
   }
-
-}
+};
 
 // TABLET
 
@@ -82,7 +78,7 @@
   .user-box__link {
     height: 100%;
   }
-}
+};
 
 @media  (min-width: $desktop-width) {
   .user-box {
@@ -134,4 +130,4 @@
   .user-box__menu {
     display: none;
   }
-}
+};

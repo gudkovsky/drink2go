@@ -103,7 +103,7 @@
     opacity: 0;
     pointer-events: none;
   }
-}
+};
 
 @media (min-width: $tablet-width) {
   .pagination {
@@ -142,6 +142,5 @@
       transform: rotate(0deg);
     }
   }
-
-}
+};
 
