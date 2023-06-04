@@ -22,4 +22,21 @@
         color: $base-black;
 
       }
+
+      .logo--footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        column-gap: 20px;
+      }
+
+      .logo--footer .logo__text {
+        display: block;
+        max-width: 100%;
+        font-family: $font-primary;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+        color: $base-black;
+      }
   }

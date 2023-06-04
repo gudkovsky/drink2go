@@ -1,11 +1,12 @@
 @media (min-width: $mobile-width) {
   .socials {
-    flex-shrink: 0;
-    width: 100%;
-  }
-
-  .socials__wrapper {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 22px;
   }
 
   .socials__links {
@@ -45,5 +46,19 @@
       transition: $transition-time;
       fill: $base-primary;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .socials {
+    max-width: 320px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  .socials__links {
+    align-self: flex-start;
   }
 }
