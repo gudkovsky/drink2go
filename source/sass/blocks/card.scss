@@ -6,20 +6,20 @@
     align-items: center;
     justify-content: space-between;
     padding: 40px 20px 20px 20px;
-    background-color: $base-white;
     text-align: left;
+    background-color: $base-white;
   }
 
   .card h3 {
-    @include h3--mobile;
     margin-top: 10px;
     margin-bottom: 4px;
     align-self: stretch;
+    @include h3--mobile;
   }
 
   .card a {
-    text-decoration: none;
     color: $base-black;
+    text-decoration: none;
   }
 
   .card p {
@@ -72,20 +72,19 @@
     text-align: left;
     transition: $transition-time;
     &:hover {
-      box-shadow: 0 2px 5px 0 #00000030;
+      box-shadow: 0 2px 5px 0 #0000002f;
     }
   }
 
   .card img {
-
     margin-bottom: 20px
   }
 
   .card h3 {
-    @include h3--tablet;
     margin-top: 10px;
     margin-bottom: 10px;
     align-self: stretch;
+    @include h3--tablet;
   }
 
   .card p {
@@ -127,9 +126,9 @@
   }
 
   .card h3 {
-    @include h3--desktop;
     margin-top: 10px;
     margin-bottom: 10px;
     align-self: stretch;
+    @include h3--desktop;
   }
 };

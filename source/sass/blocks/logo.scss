@@ -1,5 +1,3 @@
-
-
 @media (min-width: $mobile-width) {
     .logo__text {
       display: none;
@@ -20,12 +18,12 @@
       .logo__text {
         display: block;
         max-width: 130px;
+        margin-top: 5px;
+        margin-bottom: 10px;
         font-family: $font-primary;
         font-size: 12px;
         line-height: 16px;
         color: $base-black;
-        margin-top: 5px;
-        margin-bottom: 10px;
       }
 
       .logo--footer {

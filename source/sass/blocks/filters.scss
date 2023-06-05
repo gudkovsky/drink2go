@@ -7,9 +7,9 @@
   }
 
   .filters__title {
-    @include filter-heading;
     margin-top: 0px;
     margin-bottom: 30px;
+    @include filter-heading;
   }
 
 
@@ -17,19 +17,19 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     width: 118px;
     height: 40px;
     padding: 8px, 10px, 8px, 10px;
-    color: $base-black;
-    outline: none;
-    border: 2px solid $primary-lighter;
-    border-radius: 4px;
     font-family: $font-primary;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
+    color: $base-black;
     line-height: 24px;
+    text-align: center;
+    outline: none;
+    border: 2px solid $primary-lighter;
+    border-radius: 4px;
     transition: $transition-time;
     &:focus {
       border-color: $primary-darker;
@@ -154,8 +154,8 @@
       left: 4px;
       width: 16px;
       height: 16px;
-      border-radius: 50%;
       background-color: transparent;
+      border-radius: 50%;
     }
   }
 
@@ -233,7 +233,6 @@
   .filters__origin label:hover .filters__check-span {
       border-color: $base-primary;
   }
-
 
   // RANGE
 
@@ -320,9 +319,9 @@
   }
 
   .filters__title {
-    @include filter-heading;
     margin-top: 0;
     margin-bottom: 20px;
+    @include filter-heading;
   }
 
   .filters__milk,

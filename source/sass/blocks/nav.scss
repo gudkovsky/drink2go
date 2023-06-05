@@ -10,12 +10,12 @@
 
   .nav__link {
     display: block;
-    color: $base-black;
-    font-weight: 500;
-    text-decoration: none;
-    text-transform: uppercase;
     width: 100%;
     padding: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: $base-black;
+    text-transform: uppercase;
     transition: $transition-time;
   }
 
@@ -48,14 +48,14 @@
     }
 
     .nav__link {
-      color: $base-black;
-      text-decoration: none;
-      text-transform: uppercase;
       width: fit-content;
       padding-top: 32px;
       padding-bottom: 32px;
       padding-left: 20px;
       padding-right: 20px;
+      color: $base-black;
+      text-decoration: none;
+      text-transform: uppercase;
       font-size: 12px;
       line-height: 16px;
       letter-spacing: 0.02em;

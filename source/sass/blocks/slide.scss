@@ -12,11 +12,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
     margin-bottom: 60px;
     padding-top: 5px;
     padding-left: 20px;
     padding-right: 20px;
+    text-align: center;
   }
 
   .slide__image {
@@ -25,20 +25,20 @@
   }
 
   .slide__badge {
-    @include badge;
     margin-bottom: 5px;
+    @include badge;
   }
 
   .slide__title {
-    @include slide__title--mobile;
     margin: 0;
+    @include slide__title--mobile;
   }
 
   .slide__description {
-    @include slide__text--small;
     margin-top: 10px;
     margin-bottom: 20px;
     min-height: 100px;
+    @include slide__text--small;
   }
 
   .slide__old-price {
@@ -85,9 +85,6 @@
     order: 1;
     margin-bottom: 0px;
     padding-top: 60px;
-    // padding-left: 20px;
-    // padding-right: 20px;
-
   }
 
   .slide__image {
@@ -111,19 +108,19 @@
   }
 
   .slide__title {
-    @include slide__title--tablet;
     margin-top: 0;
-    margin-bottom: 5px
+    margin-bottom: 5px;
+    @include slide__title--tablet;
   }
 
   .slide__description {
-    @include slide__text--medium;
     margin-top: 10px;
     margin-bottom: 15px;
     padding-left: 10px;
     padding-right: 10px;
     min-height: 100px;
     max-width: 610px;
+    @include slide__text--medium;
   }
 
   .slide__buy-wrapper {
@@ -147,17 +144,17 @@
     order: 2;
     justify-content: flex-start;
     align-items: flex-start;
-    text-align: left;
     padding-top: 150px;
     padding-left: 30px;
+    text-align: left;
     // padding-right: 20px;
 
   }
 
   .slide__image {
+    width: 600px;
     margin-top: 0;
     margin-left: 85px;
-    width: 600px;
   }
 
   .slide__image-wrapper {
@@ -169,16 +166,16 @@
   }
 
   .slide__title {
-    @include slide__title--desktop;
     margin-bottom: 15px;
+    @include slide__title--desktop;
   }
 
   .slide__description {
-    @include slide__text--large;
     margin-top: 0px;
     margin-bottom: 35px;
     min-height: 100px;
     max-width: 610px;
     padding-left: 0;
+    @include slide__text--large;
   }
 };
