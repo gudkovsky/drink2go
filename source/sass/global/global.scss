@@ -2,21 +2,21 @@
 *::before,
 *::after {
   box-sizing: border-box;
-};
+}
 
 html {
   font-family: $font-primary;
   scroll-behavior: smooth;
-};
+}
 
 body {
   margin: 0;
-};
+}
 
 img {
   max-width: 100%;
   object-fit: contain;
-};
+}
 
 .visually-hidden {
   position: absolute;
@@ -27,24 +27,22 @@ img {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-};
+}
 
 @media (min-width: $mobile-width) {
   .wrapper {
-    @include mobile-wrapper
+    @include mobile-wrapper;
   }
-};
+}
 
 @media (min-width: $tablet-width) {
   .wrapper {
-    @include tablet-wrapper
+    @include tablet-wrapper;
   }
-};
+}
 
 @media (min-width: $desktop-width) {
   .wrapper {
-    @include desktop-wrapper
+    @include desktop-wrapper;
   }
-};
-
-
+}

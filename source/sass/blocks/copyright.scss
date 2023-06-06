@@ -7,12 +7,13 @@
     column-gap: 3px;
     text-decoration: none;
     transition: $transition-time;
+
     &:hover svg path,
-    &:focus svg path
-    {
+    &:focus svg path {
       transition: $transition-time;
       fill: $base-primary;
     }
+
     &:active svg path {
       fill: $primary-darker;
     }
@@ -32,10 +33,10 @@
     line-height: 12px;
     color: $base-gray;
   }
-};
+}
 
 @media (min-width: $tablet-width) {
   .copyright {
     padding-top: 30px;
   }
-};
+}

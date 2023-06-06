@@ -15,8 +15,9 @@
     background-color: $base-white;
     transition: $transition-time;
     cursor: pointer;
+
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -26,16 +27,20 @@
       background-position: center;
       background-size: 15%;
     }
+
     &:hover {
       background-color: $primary-lighter;
     }
+
     &:focus {
       outline: none;
       background-color: $primary-lighter;
     }
+
     &:active {
       background-color: $primary-darker;
     }
+
     &:disabled {
       background-color: $base-gray;
     }
@@ -45,6 +50,7 @@
     &::before {
       background-image: url("../../assets/img/icons/page_back--purple.svg");
     }
+
     &:hover::before {
       background-image: url("../../assets/img/icons/page_back--white.svg");
     }
@@ -55,6 +61,7 @@
       background-image: url("../../assets/img/icons/page_back--purple.svg");
       transform: rotate(180deg);
     }
+
     &:hover::before {
       background-image: url("../../assets/img/icons/page_back--white.svg");
     }
@@ -74,18 +81,22 @@
     color: $base-primary;
     background-color: $base-white;
     transition: $transition-time;
+
     &:hover {
       background-color: $primary-lighter;
       color: $base-white;
     }
+
     &:focus {
       outline: none;
       background-color: $primary-lighter;
       color: $base-white;
     }
+
     &:active {
       background-color: $primary-darker;
     }
+
     &:disabled {
       background-color: $base-gray;
     }
@@ -103,7 +114,7 @@
     opacity: 0;
     pointer-events: none;
   }
-};
+}
 
 @media (min-width: $tablet-width) {
   .pagination {
@@ -116,6 +127,7 @@
     width: 100px;
     font-size: 16px;
     line-height: 24px;
+
     &::before {
       display: flex;
       justify-content: center;
@@ -126,21 +138,24 @@
       color: $base-primary;
       background-image: none;
     }
+
     &:hover::before {
       color: $base-white;
       background-image: none;
     }
   }
+
   .pagination__button--prev {
     &::before {
-      content: 'Назад';
+      content: "Назад";
     }
   }
+
   .pagination__button--next {
     &::before {
-      content: 'Вперед';
+      content: "Вперед";
       transform: rotate(0deg);
     }
   }
-};
+}
 

@@ -14,11 +14,13 @@
 
   .catalog__badge {
     margin-bottom: 5px;
+
     @include badge;
   }
 
   .catalog__title {
     margin-top: 0;
+
     @include h2--mobile;
   }
 
@@ -43,7 +45,7 @@
   .catalog__pagination {
     margin: 0 auto;
   }
-};
+}
 
 // TABLET
 
@@ -55,6 +57,7 @@
 
   .catalog__title {
     margin-bottom: 20px;
+
     @include h2--tablet;
   }
 
@@ -80,7 +83,7 @@
   .catalog__pagination {
     margin-right: 0;
   }
-};
+}
 
 // DESKTOP
 
@@ -92,6 +95,7 @@
 
   .catalog__title {
     margin-bottom: 40px;
+
     @include h2--desktop;
   }
 
@@ -109,7 +113,7 @@
 
   .catalog__select {
     grid-column: 2 / 3;
-    grid-row: 1/ 2 ;
+    grid-row: 1/ 2;
   }
 
   .catalog__pagination {
@@ -123,6 +127,6 @@
     column-gap: 30px;
     margin-bottom: 65px;
     grid-column: 2 / 3;
-    grid-row: 2/ 3 ;
+    grid-row: 2/ 3;
   }
-};
+}

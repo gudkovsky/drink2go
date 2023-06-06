@@ -7,11 +7,11 @@
   }
 
   .filters__title {
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 30px;
+
     @include filter-heading;
   }
-
 
   .filters__price-input {
     display: inline-flex;
@@ -31,9 +31,11 @@
     border: 2px solid $primary-lighter;
     border-radius: 4px;
     transition: $transition-time;
+
     &:focus {
       border-color: $primary-darker;
     }
+
     &:disabled {
       border-color: $base-gray;
     }
@@ -72,7 +74,7 @@
     border: none;
   }
 
-  .filters__milk  .filters__title {
+  .filters__milk .filters__title {
     margin-bottom: 20px;
   }
 
@@ -98,7 +100,7 @@
     border: none;
   }
 
-  .filters__origin  .filters__title {
+  .filters__origin .filters__title {
     margin-bottom: 20px;
   }
 
@@ -118,6 +120,7 @@
   .filters__reset.button {
     background-color: $base-white;
     color: $base-primary;
+
     &:hover,
     &:focus {
       color: $base-white;
@@ -147,8 +150,9 @@
     outline: 2px solid $base-gray;
     background-color: $base-white;
     transition: $transition-time;
+
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 4px;
       left: 4px;
@@ -161,6 +165,7 @@
 
   .filters__milk input:checked + .filters__radio-span {
     outline: 2px solid $base-primary;
+
     &::before {
       background-color: $base-primary;
     }
@@ -169,8 +174,10 @@
   .filters__radio-span.disabled {
     outline: 2px solid $base-gray;
   }
+
   .filters__milk input:checked + .filters__radio-span.disabled {
     outline: 2px solid $base-gray;
+
     &::before {
       background-color: $base-gray;
     }
@@ -178,10 +185,11 @@
 
   .filters__milk label:hover .filters__radio-span {
     outline: 2px solid $base-primary;
+
     &::before {
       background-color: $primary-opacity;
     }
-}
+  }
 
   .filters__origin input {
     display: none;
@@ -196,11 +204,12 @@
     border: 2px solid $base-gray;
     background-color: $base-gray;
     transition: 0.5s;
+
     &::before {
-      content: '';
+      content: "";
       position: absolute;
-      top: 0px;
-      left: 0px;
+      top: 0;
+      left: 0;
       width: 20px;
       height: 20px;
       border-radius: 50%;
@@ -212,6 +221,7 @@
   .filters__origin input:checked + .filters__check-span {
     background-color: $base-primary;
     border: 2px solid $base-primary;
+
     &::before {
       background-color: $base-white;
       transform: translateX(18px);
@@ -222,16 +232,18 @@
     background-color: $light-gray;
     border: 2px solid $light-gray;
   }
+
   .filters__origin input:checked + .filters__check-span.disabled {
     background-color: $light-gray;
     border: 2px solid $light-gray;
+
     &::before {
       background-color: $base-gray;
     }
   }
 
   .filters__origin label:hover .filters__check-span {
-      border-color: $base-primary;
+    border-color: $base-primary;
   }
 
   // RANGE
@@ -245,12 +257,12 @@
   }
 
   .filtes__range-bar {
-      position: absolute;
-      height: 4px;
-      left: 0;
-      width: 263px;
-      border-radius: 10px;
-      background-color: $base-primary;
+    position: absolute;
+    height: 4px;
+    left: 0;
+    width: 263px;
+    border-radius: 10px;
+    background-color: $base-primary;
   }
 
   .filtes__range-toggle {
@@ -262,8 +274,9 @@
     border: 2px solid $base-primary;
     background-color: $base-white;
     cursor: pointer;
+
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: calc(50% - 8px);
       left: calc(50% - 8px);
@@ -278,23 +291,25 @@
     &:focus {
       outline: none;
     }
+
     &:hover::after,
     &:focus::after {
       background-color: $primary-opacity;
     }
+
     &:active::after {
       background-color: $base-primary;
     }
   }
 
   .filtes__range-toggle--min {
-      left: 0;
-      top: calc(50% - 12px);
+    left: 0;
+    top: calc(50% - 12px);
   }
 
   .filtes__range-toggle--max {
-      right: 0;
-      top: calc(50% - 12px);
+    right: 0;
+    top: calc(50% - 12px);
   }
 
   .filters__range.disabled {
@@ -302,12 +317,13 @@
       background-color: $light-gray;
       pointer-events: none;
     }
+
     .filtes__range-toggle {
       border-color: $light-gray;
       pointer-events: none;
     }
   }
-};
+}
 
 @media (min-width: $tablet-width) {
   .filters {
@@ -321,6 +337,7 @@
   .filters__title {
     margin-top: 0;
     margin-bottom: 20px;
+
     @include filter-heading;
   }
 
@@ -372,7 +389,7 @@
     justify-content: flex-start;
     column-gap: 20px;
   }
-};
+}
 
 @media (min-width: $desktop-width) {
   .filters__button-wrapper {
@@ -415,4 +432,4 @@
     padding-left: 26px;
     padding-right: 26px;
   }
-};
+}

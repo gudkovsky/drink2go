@@ -14,14 +14,17 @@
   &:hover {
     background-color: $primary-lighter;
   }
+
   &:focus {
     outline: none;
     background-color: $primary-lighter;
   }
+
   &:active {
     background-color: $primary-darker;
   }
+
   &:disabled {
     background-color: $base-gray;
   }
-};
+}

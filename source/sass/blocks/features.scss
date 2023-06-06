@@ -19,6 +19,7 @@
   .features__title {
     margin-top: 5px;
     margin-bottom: 36px;
+
     @include h2--mobile;
   }
 
@@ -42,6 +43,7 @@
     max-height: 56px;
     margin-bottom: 12px;
   }
+
   .features__item h3 {
     margin-top: 0;
     margin-bottom: 10px;
@@ -53,7 +55,7 @@
     font-size: 14px;
     line-height: 20px;
   }
-};
+}
 
 // TABLET
 
@@ -65,6 +67,7 @@
 
   .features__title {
     margin-bottom: 60px;
+
     @include h2--tablet;
   }
 
@@ -89,7 +92,7 @@
   }
 
   .features__item h3,
-  .features__item p  {
+  .features__item p {
     margin: 0;
   }
 
@@ -103,7 +106,7 @@
     font-size: 16px;
     line-height: 24px;
   }
-};
+}
 
 // DESKTOP
 
@@ -116,16 +119,16 @@
   .features__list {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
     justify-content: space-between;
     width: 1360px;
     row-gap: 32px;
-    column-gap: 0px;
+    column-gap: 0;
     list-style-type: none;
   }
 
   .features__title {
     margin-bottom: 80px;
+
     @include h2--desktop;
   }
 
@@ -145,4 +148,4 @@
     font-size: 16px;
     line-height: 24px;
   }
-};
+}
