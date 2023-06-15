@@ -1,6 +1,3 @@
-# Краткая инструкция по работе
-
-1. [Установить node.js](https://nodejs.org/download/release/latest-v16.x/). Сборка работает на 16 версии
-2. С помощью терминала установить зависимости - `npm ci`
-3. Запустить сборку - `npm start`
-4. Для проверки на ошибки запустить `npm run lint`
+![image](https://github.com/gudkovsky/drink2go/assets/115468838/db2c052f-8c0c-41d5-981a-132aad2ceb6a)
+![image](https://github.com/gudkovsky/drink2go/assets/115468838/50f986f6-8d3a-4925-a002-08dae17a0c2b)
+![image](https://github.com/gudkovsky/drink2go/assets/115468838/c00d77a9-c958-4d94-98b9-364944d8cdbe)
